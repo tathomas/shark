@@ -17,11 +17,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from rest_framework.routers import DefaultRouter
-from nfl.views import TeamViewSet, GameViewSet
+from nfl.views import TeamViewSet, GameViewSet, LeagueViewSet, UserViewSet
 
 router = DefaultRouter()
 router.register(prefix='teams', viewset=TeamViewSet)
 router.register(prefix='games', viewset=GameViewSet)
+router.register(prefix='users', viewset=UserViewSet)
+router.register(prefix='leagues', viewset=LeagueViewSet)
 
 urlpatterns = router.urls
 urlpatterns += [
