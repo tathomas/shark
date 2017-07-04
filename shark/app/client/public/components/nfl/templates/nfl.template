@@ -1,0 +1,32 @@
+<div ng-controller="NflController">
+  Teams
+  <div ng-repeat="team in teams">
+      <div style="margin-left: 20px;">
+          location: {{ team.location }} <br/>
+          name: {{ team.name }} <br/>
+          wins: {{ team.wins }} <br/>
+          losses: {{ team.losses }} <br/>
+          ties: {{ team.ties }} <br/>
+          <hr/>
+      </div>
+  </div>
+  <br/>
+
+  Games
+  <div ng-repeat="game in games.game">
+      <div style="margin-left: 20px;">
+          team_1: {{ game.team_1 }} <br/>
+          team_2: {{ game.team_2 }} <br/>
+          score_1: {{ game.score_1 }} <br/>
+          score_2: {{ game.score_2 }} <br/>
+          date: {{ game.date }} <br/>
+          <hr/>
+      </div>
+  </div>
+  <br/>
+
+  {{ $scope.entry }}
+<p ng-show="{{entry.name === undefined}}">Show this if $scope.foo === undefined</p>
+<p ng-show="{{games === undefined}}">Show this if $scope.foo === undefined</p>
+
+</div>
