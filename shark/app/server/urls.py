@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+import rest_framework
 from rest_framework.routers import DefaultRouter
 from nfl.views import TeamViewSet, GameViewSet, LeagueViewSet, UserViewSet
 

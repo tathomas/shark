@@ -1,4 +1,8 @@
 <div ng-controller="NflController">
+Hello World!
+By Troy Thomas
+----------------------------------------------------------------
+
   Teams
   <div ng-repeat="team in teams">
       <div style="margin-left: 20px;">
